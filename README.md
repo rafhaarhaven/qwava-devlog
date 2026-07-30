@@ -27,6 +27,15 @@ That information lives in private Notion workspaces.
 
 One file per month. New entries are appended at the bottom of the current month's file at the end of each session.
 
+## Writing rules
+
+Two reference files at the repo root, each the single source of truth for its domain:
+
+- `QUESTION_WRITING_RULES.md`: how to write and edit conversation questions (length, tone, widget eligibility, delivery format)
+- `DECK_COPY_RULES.md`: how to write deck titles, subtitles, descriptions, explanations, personalization labels, deck keys, and filter attributes
+
+Read the relevant file before doing any work in that domain.
+
 ## Platforms
 
 - iOS (Swift, SwiftUI, Xcode)
