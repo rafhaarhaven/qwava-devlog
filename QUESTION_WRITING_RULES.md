@@ -8,7 +8,7 @@ A conversation prompt that has to work spoken out loud between two people. Many 
 
 ## Length (the hard rule)
 
-- Before writing anything, open the live `questions.json` and calculate the current global average character length with a script. It moves as the library changes (currently around 70). Recompute it every session; do not assume.
+- Before writing anything, open the live `questions.json` and calculate the current global average character length with a script. It moves as the library changes (currently around 68 after the July 2026 shortening pass). Recompute it every session; do not assume.
 - Every new question must be at or below that global average. No exceptions without flagging first. Shorter and punchier is always preferred.
 - Measure by character count, not word count.
 - Widget-eligible questions go shorter still: at or below the eligible average (around 59 to 60) and with no very long single words, which overflow the watch and widget display.
@@ -33,7 +33,7 @@ No hyphens and no em dashes in any question (or in any reply). Use commas, or re
 
 ## Fixing existing questions that are too long
 
-The goal is to get the whole library at or below the average, so long ones still need trimming. Two approaches:
+The July 2026 cleanup pass is done: bulk shortening applied, longest question now 86 characters, no dashes, banned words, or curly quotes left in the file. From here this is maintenance only, applied when a long question comes up anyway. Two approaches:
 
 1. **Lossless filler removal first.** Strip "something that," hedges like "that you think" or "that you've," intensifiers like "actually," "really," "genuinely," and tails like "more than you'd expect." This usually saves ten to twenty-five percent and changes nothing. Only do this when meaning, depth, and vibe stay exactly the same.
 2. **For genuinely long and complex questions, trim gently,** roughly fifteen to thirty percent, and keep them readable. Do not crush a deep question down to sixty characters just to hit a number. If a cut would change the nuance, leave it a little longer or rephrase more carefully. Meaning always wins over length.
