@@ -20,6 +20,7 @@ The map of documentation locations. This file lists locations only, never conten
 - Prompt slot rules and tunables: `PersonPromptEngine.swift` in the iOS repo.
 - Personalization tag activation and tiers: `PersonalizationEngine.swift`; per deck labels in `deck_labels.json` (bundle only, not fetched remotely).
 - Deck recommendation logic: `RecommendationEngine.swift`.
+- Question suggestions and the person recommendation: `SuggestedQuestionEngine.swift`, `PersonMatchingStore.swift`; the matching content in `person_matching.json` (bundle only for now).
 - Follow up offer timing: `FollowUpsStore.swift`; content in `follow_ups.json`.
 - Remote content and image loading: `RemoteContent.swift`, `RemoteDeckCover.swift`; the CDN manifest decides what is fetched remotely.
 
