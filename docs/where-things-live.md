@@ -14,6 +14,9 @@ The map of documentation locations. This file lists locations only, never conten
 - **No-Talk Growth Strategy**: Apple Search Ads and passive growth. Never mirrored here; this repo is public.
 - **Social Media Strategy**: Instagram cadence and post log. Same rule.
 - **Pitch Deck, read alone version**: the pitch content. Same rule.
+- **Pitch Research & Data**: the sources behind the pitch's market and loneliness numbers. Same rule.
+- **Next Level**: product evolution: the ten ideas by pillar and the Qwava Plus candidate list. The input for business model and pitch roadmap work. Same rule.
+- **Business Plan**: the money logic: Qwava Plus pricing, free caps, revenue scenarios, costs and break even, later revenue, and the investor narrative. Same rule.
 
 ## Code (the truth for constants and behavior)
 
@@ -27,4 +30,7 @@ The map of documentation locations. This file lists locations only, never conten
 ## This repo
 
 - `/devlog/`: one file per month, one entry per session, newest at the bottom. The permanent dated record.
+- `QUESTION_WRITING_RULES.md`: the rules for writing and reviewing deck questions. Read before any Decks content session.
+- `DECK_COPY_RULES.md`: the rules for deck copy. Read before Decks and Copy sessions.
 - The README holds the devlog rules.
+
