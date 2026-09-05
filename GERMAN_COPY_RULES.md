@@ -2,7 +2,7 @@
 
 The single source of truth for the German version of Qwava. Read this before translating any deck copy, question, follow up, or message line. It sits alongside `QUESTION_WRITING_RULES.md` and `DECK_COPY_RULES.md`, which still apply: this file only records what is different in German.
 
-Written during the deck copy pass and extended after translating all 570 Natural Reach messages and all 3,560 questions across 55 decks (August 2026). Follow ups and UI strings are still to come.
+Written during the deck copy pass and extended through the full translation: 570 messages, 3,560 questions, 3,740 follow ups, all deck copy and labels, and the 399 UI strings in the app String Catalog (September 2026). The library ships complete; these rules now guard edits and additions.
 
 ## Register
 
