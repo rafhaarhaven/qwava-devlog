@@ -221,3 +221,15 @@ Untranslated fields fall back to the English rather than exporting empty, so a m
 - Verify every character count with a script before presenting. Never eyeball it.
 - Present copy in the chat for approval first, then hand over a paste ready file.
 - Translate deck by deck, not in arbitrary blocks, so the voice stays consistent inside a deck.
+
+
+## Standing rule: every new string ships in both languages (8 September 2026)
+
+Android is at full German parity with iOS. From now on, any new user facing text lands in English and German together, in the same change, never as a follow up:
+
+- iOS interface strings: `Localizable.xcstrings` with the German filled in
+- Android interface strings: through the catalog and `docs/convert.py` regeneration, or `strings_android.xml` (en and de) for Android only strings
+- Content: the German content files alongside the English ones, exported together
+- Code built phrases (counts, composed labels, date formats) go through the catalog's format strings on both platforms, never string concatenation with English word order
+
+A string without its German is not done.
