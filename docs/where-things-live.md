@@ -11,6 +11,7 @@ The map of documentation locations. This file lists locations only, never conten
 - **Natural Reach, Evolution**: the sharing layer: the flow, what it writes, platform differences, expansion candidates.
 - **Person Prompt Engine, What Shows When**: the operational record of every suggestion surface about a person: slot priority, ask rules, coordination duties for future surfaces.
 - **Personalization Labels**: the tag system, per deck labels and priorities, and the advanced label wishlist.
+- **Store Listings**: what the App Store and Google Play listings say right now, per platform and locale: name, subtitle, keywords, promotional text, descriptions, release notes, screenshot captions, feature graphic. Plus why each piece says what it says and what is still untested. Read before touching any store field.
 - **No-Talk Growth Strategy**: Apple Search Ads and passive growth. Never mirrored here; this repo is public.
 - **Social Media Strategy**: Instagram cadence and post log. Same rule.
 - **Pitch Deck, read alone version**: the pitch content. Same rule.
