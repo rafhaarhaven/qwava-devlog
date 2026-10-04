@@ -25,6 +25,8 @@ The map of documentation locations. This file lists locations only, never conten
 - Personalization tag activation and tiers: `PersonalizationEngine.swift`; per deck labels in `deck_labels.json` (bundled fallback, cached, refreshed from the CDN like the other content stores; German at `de/deck_labels.json`).
 - Deck recommendation logic: `RecommendationEngine.swift`.
 - Question suggestions and the person recommendation: `SuggestedQuestionEngine.swift`, `PersonMatchingStore.swift`; the matching content in `person_matching.json` (bundle only for now).
+- Recommendation rules per deck (never, birthday, quiet): the `recommend` and `quiet_days` columns in `deck_filters.json`, read by `DeckFilterStore.swift`; per question `closeness` and `group_only` in `questions.json`.
+- Cloud sync, merges and tombstones: `CloudSync.swift` and the stores it feeds (`FavoritesStore`, `SavedQuestionsStore`, `SharedQuestionsStore`, `PeopleStore`).
 - Follow up offer timing: `FollowUpsStore.swift`; content in `follow_ups.json`.
 - Remote content and image loading: `RemoteContent.swift`, `RemoteDeckCover.swift`; the CDN manifest decides what is fetched remotely.
 
