@@ -27,6 +27,15 @@ That information lives in private Notion workspaces.
 
 One file per month. New entries are appended at the bottom of the current month's file at the end of each session.
 
+## Entry headers
+
+Every entry starts with `## YYYY-MM-DD: short summary (platform)`, for example `## 2026-08-07: Follow up layer, people merge fix (iOS)`.
+
+- The summary says what the session was about in three to eight words
+- The platform is iOS, Android, Content, Stores, Website or Pitch
+- Never a chat name or number, in the header or in the bullets; those numbers mean nothing to someone reading later
+- Two entries on the same date are told apart by their summaries
+
 ## Writing rules
 
 Two reference files at the repo root, each the single source of truth for its domain:
