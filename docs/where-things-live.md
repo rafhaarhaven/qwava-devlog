@@ -24,10 +24,10 @@ The map of documentation locations. This file lists locations only, never conten
 - Prompt slot rules and tunables: `PersonPromptEngine.swift` in the iOS repo.
 - Personalization tag activation and tiers: `PersonalizationEngine.swift`; per deck labels in `deck_labels.json` (bundled fallback, cached, refreshed from the CDN like the other content stores; German at `de/deck_labels.json`).
 - Deck recommendation logic: `RecommendationEngine.swift`.
-- Question suggestions and the person recommendation: `SuggestedQuestionEngine.swift`, `PersonMatchingStore.swift`; the matching content in `person_matching.json` (bundle only for now). Birthday cards for Your Space: `BirthdayPicks.swift`.
+- Question suggestions and the person recommendation: `SuggestedQuestionEngine.swift`, `PersonMatchingStore.swift`; the matching content in `person_matching.json` (bundle only for now). Birthday card facts (window, wish sent, headline inset) for the person page and Your Space: `BirthdayPicks.swift`.
 - Recommendation rules per deck (never, birthday, quiet): the `recommend` and `quiet_days` columns in `deck_filters.json`, read by `DeckFilterStore.swift`; per question `closeness` and `group_only` in `questions.json`.
-- Cloud sync, merges and tombstones: `CloudSync.swift` and the stores it feeds (`FavoritesStore`, `SavedQuestionsStore`, `SharedQuestionsStore`, `PeopleStore`).
-- Follow up offer timing: `FollowUpsStore.swift`; content in `follow_ups.json`.
+- Cloud sync, merges and tombstones: `CloudSync.swift` and the stores it feeds (`FavoritesStore`, `SavedQuestionsStore`, `SharedQuestionsStore`, `PeopleStore`, `FollowUpsStore` for dismissals).
+- Follow up offer timing, language of the offer and dismissal stamps: `FollowUpsStore.swift`; content in `follow_ups.json` and `de_follow_ups.json` (tiers question, question_2, universal, later).
 - Remote content and image loading: `RemoteContent.swift`, `RemoteDeckCover.swift`; the CDN manifest decides what is fetched remotely.
 
 ## This repo
