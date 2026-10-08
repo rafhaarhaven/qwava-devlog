@@ -29,6 +29,9 @@ The map of documentation locations. This file lists locations only, never conten
 - Cloud sync, merges and tombstones: `CloudSync.swift` and the stores it feeds (`FavoritesStore`, `SavedQuestionsStore`, `SharedQuestionsStore`, `PeopleStore`, `FollowUpsStore` for dismissals).
 - Follow up offer timing, language of the offer and dismissal stamps: `FollowUpsStore.swift`; content in `follow_ups.json` and `de_follow_ups.json` (tiers question, question_2, universal, later).
 - Remote content and image loading: `RemoteContent.swift`, `RemoteDeckCover.swift`; the CDN manifest decides what is fetched remotely.
+- Content cache headers: `.htaccess` in `/content/app/` on the Strato content server.
+- Sharing: `QwavaShareSheet.swift` (one share sheet for every share, mail subject for mail apps); the Natural Reach flow in `NaturalReachView.swift`.
+- App opens and deep sessions behind the behaviour labels: `AppOpenTracker.swift`, and the deep session count in `QuestionPlayerView.swift`.
 
 ## This repo
 
