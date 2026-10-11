@@ -129,6 +129,27 @@ German wants to build `Kinder-Ich`, `Arbeits-Ich`, `Familien-Ich`, `Wochenend-Ic
 
 Other hyphen traps caught: `Startup-Klischee`, `Startup-Leben`, `Dating-Regel`, `Lieblings-Apps`, `Winterabend-Look`, `Zwei-Fragen-Tag`, `Wikipedia-Strudel`. Each was rewritten as a phrase.
 
+## Long words (the card width rule)
+
+German builds compounds, and a compound cannot break across lines. On the question card a word that is too wide overflows or forces an ugly break.
+
+- **Hard limit: no single word wider than 280 points in Inter SemiBold 28.** Punctuation counts, because a question mark or comma stays glued to its word.
+- **Target: under 250 points.** After the October 2026 pass the widest word in the questions is 259.
+- **Character guide, punctuation included:** up to 13 characters is always safe. 14 to 16 is usually fine, measure it. 17 or more is usually over 250. 20 or more is always over 280. Characters are only a hint (`m` and `w` are wide, `i` and `l` are narrow), so the script decides.
+
+**The fix is a phrase, not a compound.**
+
+- Open the compound with a preposition: `Geburtstagsgeschenk` became `Geschenk zum Geburtstag`, `Morgengewohnheit` became `Gewohnheit am Morgen`, `Arbeitsgewohnheit` became `Gewohnheit im Job`, `Sommerfreundschaft` became `Freundschaft aus einem Sommer`.
+- Split or swap a long verb: `hat ... zusammengebracht` became `brachte ... zusammen`, `auseinandergenommen` became `zerlegt`.
+- Turn a long superlative into an adverb: `das Überdramatischste` became `total überdramatisch`.
+- Keep a long word away from the end of the question, where the question mark adds to its width.
+
+**Settled short forms:** `Jobbeschreibung` (not `Stellenbeschreibung`), `das Kleingedruckte` (not `Nutzungsbedingungen`), `Parallelwelt` (not `Paralleluniversum`).
+
+**Meaning and length still win.** The new line stays at or under the English length and keeps the sense of the question. If a word has no natural split and fits under 280, leave it: `Sprachnachrichten`, `Langsamerwerden`, `Erwachsenwerden`.
+
+**Verify with a script.** Measure the widest word of every row in the whole library, not only the new rows, with Pillow and the static Inter SemiBold at size 28. Over 280 is a fail, over 250 gets a second look.
+
 ## Settled vocabulary
 
 Words that recur across the library and must stay consistent.
