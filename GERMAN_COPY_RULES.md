@@ -26,7 +26,7 @@ The IDs are the link between the English and German rows. **Never renumber or re
 
 German runs 10 to 20 percent longer than English. The layouts were built for English, so the ceilings do not move.
 
-**The rule: every German field must be at or under the English length for that same row, and never over the ceiling in `DECK_COPY_RULES.md`.** Where German cannot fit, cut an idea rather than shrink the type. A shorter German line that lands is better than a faithful one that truncates.
+**The rule for deck copy: every German title, subtitle, description and explanation must be at or under the English length for that same row, and never over the ceiling in `DECK_COPY_RULES.md`.** Questions and follow ups have their own rule below. Where German cannot fit, cut an idea rather than shrink the type. A shorter German line that lands is better than a faithful one that truncates.
 
 Ceilings that caught real errors during the deck pass: subtitle 27, description 65, explanation 120 to 160 and exactly two sentences.
 
@@ -206,13 +206,21 @@ The Natural Reach `app_line` messages name Qwava and explain what it is. **Keep 
 
 `Not an ad, just seeing if it's useful` became `Keine Werbung, ich schaue nur, ob sie hilft.`
 
-## Length rules for questions
+## Length rules for questions and follow ups
 
-- **Never over 86 characters.** That is the longest English question in the library and therefore proven to fit the card.
-- **Never over 78 for the 377 widget eligible questions.** That is their proven maximum on the watch and home screen.
-- **Each deck's German average must land at or under that deck's English average.** This catches drift that individual line checks miss. Founding Solo failed this on the first pass at 57.9 against 55.2 and needed thirty rows tightened.
+Three checks, each with its own job.
 
-Achieved across the full library: English average 67.1, German 60.2. Longest German question 82. Widget rows average 55.3, maximum 76.
+**1. The hard ceiling protects the layout.**
+
+- No question over 86 characters. That is the longest English question in the library and therefore proven to fit the card.
+- No widget eligible question over 78. That is their proven maximum on the watch and home screen.
+- No follow up over 67. That is the longest English follow up.
+
+**2. The row gap keeps the two languages similar.** A German row may be longer than its English row by at most 10 characters. Shorter is always fine. German does not have to match the English length row by row; the difference just must not be wild, so both languages keep a similar layout.
+
+**3. The average catches drift.** Each deck's German average must land at or under that deck's English average. Founding Solo failed this on the first pass at 57.9 against 55.2 and needed thirty rows tightened.
+
+State in October 2026: questions average 67.1 in English and 60.2 in German, longest German question 81. Follow ups average 38.1 in English and 32.1 in German, longest German follow up 62.
 
 ## Check the whole library, not just the deck
 
