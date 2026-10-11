@@ -146,7 +146,7 @@ German builds compounds, and a compound cannot break across lines. On the questi
 
 **Settled short forms:** `Jobbeschreibung` (not `Stellenbeschreibung`), `das Kleingedruckte` (not `Nutzungsbedingungen`), `Parallelwelt` (not `Paralleluniversum`).
 
-**Meaning and length still win.** The new line stays at or under the English length and keeps the sense of the question. If a word has no natural split and fits under 280, leave it: `Sprachnachrichten`, `Langsamerwerden`, `Erwachsenwerden`.
+**Meaning and length still win.** The new line keeps the sense of the question and stays inside the length rules below. If a word has no natural split and fits under 280, leave it: `Sprachnachrichten`, `Langsamerwerden`, `Erwachsenwerden`.
 
 **Verify with a script.** Measure the widest word of every row in the whole library, not only the new rows, with Pillow and the static Inter SemiBold at size 28. Over 280 is a fail, over 250 gets a second look.
 
@@ -208,19 +208,17 @@ The Natural Reach `app_line` messages name Qwava and explain what it is. **Keep 
 
 ## Length rules for questions and follow ups
 
-Three checks, each with its own job.
+**Meaning comes first.** A German line may be longer than its English line when that is what it takes to keep the sense of the question. Never shorten a German line just to match the English length.
 
-**1. The hard ceiling protects the layout.**
+**1. Hard ceiling (protects the layout).**
 
-- No question over 86 characters. That is the longest English question in the library and therefore proven to fit the card.
-- No widget eligible question over 78. That is their proven maximum on the watch and home screen.
-- No follow up over 67. That is the longest English follow up.
+- No question over 86 characters.
+- No widget eligible question over 78.
+- No follow up over 67.
 
-**2. The row gap keeps the two languages similar.** A German row may be longer than its English row by at most 10 characters. Shorter is always fine. German does not have to match the English length row by row; the difference just must not be wild, so both languages keep a similar layout.
+These are the longest English rows, so they are proven to fit.
 
-**3. The average catches drift.** Each deck's German average must land at or under that deck's English average. Founding Solo failed this on the first pass at 57.9 against 55.2 and needed thirty rows tightened.
-
-State in October 2026: questions average 67.1 in English and 60.2 in German, longest German question 81. Follow ups average 38.1 in English and 32.1 in German, longest German follow up 62.
+**2. Keep the German average (catches drift).** German has its own average, not tied to English: questions 60.2, follow ups 32.1 (October 2026). New or rewritten rows aim at or below it. A longer row is fine when the meaning needs it, as long as the library average does not creep up. Recompute the average with a script every session.
 
 ## Check the whole library, not just the deck
 
