@@ -108,6 +108,12 @@ Every question has two follow ups of its own. A new question is not finished wit
 
 ### How a follow up is written
 
+- **Every follow up must be interesting on its own (the most important rule here).** It adds a new angle the person would enjoy answering. A bare "Why?", "How did it start?", "What changed?", "Tell me more" or any other line that only asks to elaborate is never enough, and neither is a line that fits under any question in the library. Ways that work:
+  - **Either/or:** "Are you fighting it or welcoming it back?", "Did you learn it the easy way or the hard way?"
+  - **A twist on the answer:** "And what's the picture on the last page?", "What happened five minutes after it was taken?"
+  - **Turn it to the other person:** "Did I know it mattered when I said it, you think?", "Is my version maybe better, though?"
+  - **A concrete detail, time or place:** "What would it take to do that again next month?"
+- Quality wins over length. A follow up may run longer than the average when its angle needs the words; never cut a line down to a generic one to save characters (see "Length of follow ups").
 - It must work for ANY answer the other person could give. Never assume the answer. "Who gave it to you?" fails when nobody did; "Where did it come from?" works.
 - One short spoken question. All voice rules for questions apply: for the ear, plain words, no therapy speak, no dashes, no banned words, nothing that guilts.
 - It may lean on the question with "it", "that", "there". It is always read right under its question.
@@ -134,7 +140,9 @@ Every question has two follow ups of its own. A new question is not finished wit
 | `question` | 41.9 | 34.4 | 66 |
 | `question_2` | 33.7 | 29.4 | 47 |
 
-- A new deck's first follow ups aim at or under 42, its second follow ups at or under 34.
+- The averages are a guide, not a target to undercut: a new deck's follow ups should land near them (first about 42, second about 34), not far below. A deck whose follow ups average well under these is usually full of generic lines; rewrite those rather than celebrate the short count.
+- Individual rows may go longer when the angle needs it, up to the 67 ceiling.
+- Existing follow ups of low quality (generic, elaborate only) are to be reviewed in a later pass (October 2026).
 
 ### Delivery format for follow ups
 
