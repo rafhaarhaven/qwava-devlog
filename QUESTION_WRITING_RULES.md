@@ -83,9 +83,11 @@ The daily question is a mindful pause: someone opening their phone in a free min
 - **Universal:** no job, career, startup, team, or networking framing (the user might be a student or not working).
 - **Not place bound:** no "this city," "here," "in Lisbon."
 - **Not time bound:** no "this weekend," "this week," "tonight," "this season." Evergreen "lately" or "recently" is fine.
-- **Leaning medium or deep** for reflection, with a lighter layer mixed in for balance.
 - **Short and display safe:** at or below the eligible average, never over 78, no long words.
-- **Spread across decks** rather than concentrated. Skip inherently context locked decks (Lisbon, Berlin, Local Secrets, Sibling Stories), work framed decks (Networking, Team Sync, Between Meetings, Startup Talk, Career Journeys), and day or season specific decks (Weekend Debrief, Before the Weekend, The Long Days, The Quiet Season).
+
+The deck does not matter. Any question that passes every test above on its own can be eligible, whatever deck it comes from. City decks, work decks and day or season decks rarely qualify, only because most of their questions fail those tests. Prefer a spread across decks over many questions from one.
+
+There is no depth rule for the pool for now. In October 2026 it is 58 percent light, 27 medium and 15 deep, and that balance is fine. The 377 questions are enough for about a year; the mix gets discussed again when the pool is extended.
 
 ## Follow ups
 
