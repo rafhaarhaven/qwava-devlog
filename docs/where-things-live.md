@@ -30,7 +30,7 @@ The map of documentation locations. This file lists locations only, never conten
 - Follow up offer timing, language of the offer and dismissal stamps: `FollowUpsStore.swift`; content in `follow_ups.json` and `de_follow_ups.json` (tiers question, question_2, universal, later).
 - Remote content and image loading: `RemoteContent.swift`, `RemoteDeckCover.swift`; the CDN manifest decides what is fetched remotely.
 - Content cache headers: `.htaccess` in `/content/app/` on the Strato content server.
-- Sharing: `QwavaShareSheet.swift` (one share sheet for every share, mail subject for mail apps); the Natural Reach flow in `NaturalReachView.swift`. The image card: `ShareCardView.swift` (the three looks), `ShareCardRenderer.swift` (cover, PNG, file name), `ShareCardPicker.swift` (picker and the per person preselection). Android twins: `ShareCardView.kt`, `ShareCardRenderer.kt` (plus the FileProvider in `res/xml/share_card_paths.xml`), `ShareCardPicker.kt` with `ShareCardChoices`.
+- Sharing: `QwavaShareSheet.swift` (one share sheet for every share, mail subject for mail apps, `isKeptForSelf` for saves that are not sends); the Natural Reach flow in `NaturalReachView.swift`. The image card: `ShareCardView.swift` (the three looks), `ShareCardRenderer.swift` (cover, PNG, file name), `ShareCardPicker.swift` (picker and the per person preselection). Android twins: `ShareCardView.kt`, `ShareCardRenderer.kt` (plus the FileProvider in `res/xml/share_card_paths.xml`), `ShareCardPicker.kt` with `ShareCardChoices`.
 - App opens and deep sessions behind the behaviour labels: `AppOpenTracker.swift`, and the deep session count in `QuestionPlayerView.swift`.
 
 ## This repo
