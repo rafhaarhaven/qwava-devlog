@@ -10,6 +10,7 @@ The map of documentation locations. This file lists locations only, never conten
 - **Your Space, Evolution**: the Your Space tab: sections, placeholder rules, recommendation engine, sync, guardrails.
 - **Natural Reach, Evolution**: the sharing layer: the flow, what it writes, platform differences, expansion candidates.
 - **Person Prompt Engine, What Shows When**: the operational record of every suggestion surface about a person: slot priority, ask rules, coordination duties for future surfaces.
+- **Notifications, Evolution**: the notification and nudge model: the three layer settings, the types and their times, the rhythm intervals, the Your Space nudge card rules, scheduling on iOS, the build order. Read before any notification or nudge session.
 - **Personalization Labels**: the tag system, per deck labels and priorities, and the advanced label wishlist.
 - **Store Listings**: what the App Store and Google Play listings say right now, per platform and locale: name, subtitle, keywords, promotional text, descriptions, release notes, screenshot captions, feature graphic. Plus why each piece says what it says and what is still untested. Read before touching any store field.
 - **No-Talk Growth Strategy**: Apple Search Ads and passive growth. Never mirrored here; this repo is public.
@@ -31,6 +32,7 @@ The map of documentation locations. This file lists locations only, never conten
 - Remote content and image loading: `RemoteContent.swift`, `RemoteDeckCover.swift`; the CDN manifest decides what is fetched remotely.
 - Content cache headers: `.htaccess` in `/content/app/` on the Strato content server.
 - Sharing: `QwavaShareSheet.swift` (one share sheet for every share, mail subject for mail apps, `isKeptForSelf` for saves that are not sends); the Natural Reach flow in `NaturalReachView.swift`. The image card: `ShareCardView.swift` (the three looks), `ShareCardRenderer.swift` (cover, PNG, file name), `ShareCardPicker.swift` (picker and the per person preselection). Android twins: `ShareCardView.kt`, `ShareCardRenderer.kt` (plus the FileProvider in `res/xml/share_card_paths.xml`), `ShareCardPicker.kt` with `ShareCardChoices`. On Android the save rule lives in `ShareResultReceiver.kt` (`isKeptForSelf`, by package name).
+- Notification scheduling and the rhythm reminder intervals: `NotificationScheduler.swift` (planned, not yet created).
 - App opens and deep sessions behind the behaviour labels: `AppOpenTracker.swift`, and the deep session count in `QuestionPlayerView.swift`.
 
 ## This repo
