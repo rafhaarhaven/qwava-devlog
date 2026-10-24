@@ -32,7 +32,8 @@ The map of documentation locations. This file lists locations only, never conten
 - Remote content and image loading: `RemoteContent.swift`, `RemoteDeckCover.swift`; the CDN manifest decides what is fetched remotely.
 - Content cache headers: `.htaccess` in `/content/app/` on the Strato content server.
 - Sharing: `QwavaShareSheet.swift` (one share sheet for every share, mail subject for mail apps, `isKeptForSelf` for saves that are not sends); the Natural Reach flow in `NaturalReachView.swift`. The image card: `ShareCardView.swift` (the three looks), `ShareCardRenderer.swift` (cover, PNG, file name), `ShareCardPicker.swift` (picker and the per person preselection). Android twins: `ShareCardView.kt`, `ShareCardRenderer.kt` (plus the FileProvider in `res/xml/share_card_paths.xml`), `ShareCardPicker.kt` with `ShareCardChoices`. On Android the save rule lives in `ShareResultReceiver.kt` (`isKeptForSelf`, by package name).
-- Notification scheduling and the rhythm reminder intervals: `NotificationScheduler.swift` (planned, not yet created).
+- Notifications: `NotificationScheduler.swift` (settings, permission, schedule and cancel per kind), `NotificationPlanner.swift` (what fires when, rebuilt on foreground and on changes), `NotificationTapHandler.swift` (tap routing); the More card in `NotificationSettingsCard.swift`.
+- Reminders about people: intervals per rhythm in `ReminderRules.swift`; the person sheet control in `SpacePersonReminderRow.swift`; the Your Space nudge in `NudgeStore.swift` (who is due, two a day, Not now and its sync) and `SpaceNudgeCard.swift`.
 - App opens and deep sessions behind the behaviour labels: `AppOpenTracker.swift`, and the deep session count in `QuestionPlayerView.swift`.
 
 ## This repo
