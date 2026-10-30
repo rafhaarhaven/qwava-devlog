@@ -11,6 +11,7 @@ The map of documentation locations. This file lists locations only, never conten
 - **Natural Reach, Evolution**: the sharing layer: the flow, what it writes, platform differences, expansion candidates.
 - **Person Prompt Engine, What Shows When**: the operational record of every suggestion surface about a person: slot priority, ask rules, coordination duties for future surfaces.
 - **Notifications, Evolution**: the notification and nudge model: the three layer settings, the types and their times, the rhythm intervals, the Your Space nudge card rules, scheduling on iOS, the build order. Read before any notification or nudge session.
+- **Infrastructure and Accounts, what is set up**: the current state behind the app: Firebase plan, budget alert, recovery and backups, rules and sign in methods, API keys, Strato domains and certificates, Apple and Play account status, and what to do when something goes wrong. Never mirrored here; this repo is public.
 - **Personalization Labels**: the tag system, per deck labels and priorities, and the advanced label wishlist.
 - **Store Listings**: what the App Store and Google Play listings say right now, per platform and locale: name, subtitle, keywords, promotional text, descriptions, release notes, screenshot captions, feature graphic. Plus why each piece says what it says and what is still untested. Read before touching any store field.
 - **No-Talk Growth Strategy**: Apple Search Ads and passive growth. Never mirrored here; this repo is public.
@@ -27,7 +28,7 @@ The map of documentation locations. This file lists locations only, never conten
 - Deck recommendation logic: `RecommendationEngine.swift`.
 - Question suggestions and the person recommendation: `SuggestedQuestionEngine.swift`, `PersonMatchingStore.swift`; the matching content in `person_matching.json` (bundle only for now). Birthday card facts (window, wish sent, headline inset) for the person page and Your Space: `BirthdayPicks.swift`.
 - Recommendation rules per deck (never, birthday, quiet): the `recommend` and `quiet_days` columns in `deck_filters.json`, read by `DeckFilterStore.swift`; per question `closeness` and `group_only` in `questions.json`.
-- Cloud sync, merges and tombstones: `CloudSync.swift` and the stores it feeds (`FavoritesStore`, `SavedQuestionsStore`, `SharedQuestionsStore`, `PeopleStore`, `FollowUpsStore` for dismissals).
+- Cloud sync, merges and tombstones: `CloudSync.swift` and the stores it feeds (`FavoritesStore`, `SavedQuestionsStore`, `SharedQuestionsStore`, `PeopleStore`, `FollowUpsStore` for dismissals). Whether a sign out wipes the device: `AuthStore.signOutIsIntended`, read in `CloudSync.signedOut`.
 - Follow up offer timing, language of the offer and dismissal stamps: `FollowUpsStore.swift`; content in `follow_ups.json` and `de_follow_ups.json` (tiers question, question_2, universal, later).
 - Remote content and image loading: `RemoteContent.swift`, `RemoteDeckCover.swift`; the CDN manifest decides what is fetched remotely.
 - Content cache headers: `.htaccess` in `/content/app/` on the Strato content server.
