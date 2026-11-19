@@ -2,10 +2,14 @@
 
 The map of documentation locations. This file lists locations only, never content, so it cannot go stale. The Notion pages are the single source of truth for product decisions; the code is the truth for constants; the devlog is the permanent dated record of what happened.
 
+## Working rules
+
+- The Claude project instructions: the only rulebook for how every chat works. Loaded into every chat automatically; never copied here or in Notion.
+
 ## Notion (private, fetch before every update)
 
 - **Qwava, Now**: one screen with what is live, what is in progress, and the top open tasks. Read first in every chat; rewritten at every session end, never added to.
-- **Build Log**: session log, milestones, open tasks, and the working rules for every chat.
+- **Build Log**: session log, milestones, and open tasks.
 - **Qwava, What the App Does Today**: the authoritative description of current app behavior, live and unreleased.
 - **Connection Rhythm, Evolution**: the relational layer: v1, v2, the person knowledge layer, the prompt slot, the v3 shelf, and every decision with its reasoning.
 - **Your Space, Evolution**: the Your Space tab: sections, placeholder rules, recommendation engine, sync, guardrails.
