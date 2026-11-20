@@ -9,7 +9,8 @@ The map of documentation locations. This file lists locations only, never conten
 ## Notion (private, fetch before every update)
 
 - **Qwava, Now**: one screen with what is live, what is in progress, and the top open tasks. Read first in every chat; rewritten at every session end, never added to.
-- **Build Log**: session log, milestones, and open tasks.
+- **Build Log**: session log (current month only), milestones, and open tasks.
+- **Session log archive**: the older session log entries, by month. Read only when a session needs history.
 - **Qwava, What the App Does Today**: the authoritative description of current app behavior, live and unreleased.
 - **Connection Rhythm, Evolution**: the relational layer: v1, v2, the person knowledge layer, the prompt slot, the v3 shelf, and every decision with its reasoning.
 - **Your Space, Evolution**: the Your Space tab: sections, placeholder rules, recommendation engine, sync, guardrails.
