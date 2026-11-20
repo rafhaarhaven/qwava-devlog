@@ -12,6 +12,7 @@ The map of documentation locations. This file lists locations only, never conten
 - **Build Log**: session log (current month only), milestones, and open tasks.
 - **Session log archive**: the older session log entries, by month. Read only when a session needs history.
 - **Qwava, What the App Does Today**: the authoritative description of current app behavior, live and unreleased.
+- **Parity, iOS and Android**: what Android still lacks, what is iOS only by design, and where Android has its own shape. Read before any Android session and before planning a twin.
 - **Connection Rhythm, Evolution**: the relational layer: v1, v2, the person knowledge layer, the prompt slot, the v3 shelf, and every decision with its reasoning.
 - **Your Space, Evolution**: the Your Space tab: sections, placeholder rules, recommendation engine, sync, guardrails.
 - **Natural Reach, Evolution**: the sharing layer: the flow, what it writes, platform differences, expansion candidates.
