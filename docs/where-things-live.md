@@ -50,5 +50,6 @@ The map of documentation locations. This file lists locations only, never conten
 - `QUESTION_WRITING_RULES.md`: the rules for writing and reviewing deck questions. Read before any Decks content session.
 - `DECK_COPY_RULES.md`: the rules for deck copy. Read before Decks and Copy sessions.
 - `GERMAN_COPY_RULES.md`: the rules for the German version, register, length, punctuation and what never gets translated. Read before any translation session.
+- `tools/build_content.py`: builds the content files from the sheet exports, checks them and reports what changed. How to run it is in `tools/README.md`. Every content export runs it.
 - The README holds the devlog rules.
 
