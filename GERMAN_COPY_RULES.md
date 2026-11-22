@@ -140,6 +140,8 @@ German builds compounds, and a compound cannot break across lines. In the questi
 - This replaces the October 2026 rule (280 points in Inter SemiBold 28), which was measured on the share card and let 53 questions break in the player.
 - Larger iOS text sizes (Dynamic Type) scale the player font, so long words can still break there; that is a code question, not a content one.
 
+**Follow ups have their own surface.** They never appear in the question player; the widest place they show is the share image, a 280 point column in Inter SemiBold 28 (tracking minus 0.2). So follow ups are measured there: no word wider than 280 points, a second look above 250. The same phrase fixes apply. In November 2026 all 8,840 follow ups passed. If follow ups ever move into the player, they switch to the 327 rule above.
+
 **The fix is a phrase, not a compound.**
 
 - Open the compound with a preposition: `Geburtstagsgeschenk` became `Geschenk zum Geburtstag`, `Morgengewohnheit` became `Gewohnheit am Morgen`, `Abendgewohnheit` became `Gewohnheit am Abend`, `Arbeitsgeschichte` became `Geschichte aus dem Job`, `Geldentscheidung` became `Entscheidung über Geld`.
