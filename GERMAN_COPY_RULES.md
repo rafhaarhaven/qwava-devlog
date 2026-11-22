@@ -147,7 +147,7 @@ German builds compounds, and a compound cannot break across lines. In the questi
 - Turn a long superlative into an adverb or a different sentence: `das Überdramatischste` became `total überdramatisch`.
 - Keep a long word away from the end of the question, where the question mark adds to its width.
 
-**Settled short forms:** `Kürzertreten`, `Langsamkeit` or `langsamer machen` (not `Langsamerwerden`), `Großwerden` (not `Erwachsenwerden`), `Sprachmemos` (not `Sprachnachrichten`), `Beschreibung deines Jobs` or `Stellenanzeige` (not `Jobbeschreibung`, which is too wide), `für normal halten` or `zu schätzen wissen` (not `selbstverständlich`), `Mitteilung` (not `Benachrichtigung`), `das Kleingedruckte` (not `Nutzungsbedingungen`), `Parallelwelt` (not `Paralleluniversum`).
+**Settled short forms:** `Kürzertreten`, `Langsamkeit` or `langsamer machen` (not `Langsamerwerden`), `Großwerden` (not `Erwachsenwerden`), `gesprochene Nachrichten` (not `Sprachnachrichten`; `Sprachmemos` is the name of the iPhone Voice Memos app), `Beschreibung deines Jobs` (not `Jobbeschreibung`, which is too wide; `Stellenanzeige` is a job ad, a different thing), `für normal halten` or `zu schätzen wissen` (not `selbstverständlich`), `Mitteilung` (not `Benachrichtigung`), `das Kleingedruckte` (not `Nutzungsbedingungen`), `Parallelwelt` (not `Paralleluniversum`).
 
 **Meaning and length still win.** The new line keeps the sense of the question and stays inside the length rules below. There are no exceptions to the width limit: a word over 327 always breaks on a small iPhone.
 
