@@ -9,7 +9,8 @@ The map of documentation locations. This file lists locations only, never conten
 ## Notion (private, fetch before every update)
 
 - **Qwava, Now**: one screen with what is live, what is in progress, and the top open tasks. Read first in every chat; rewritten at every session end, never added to.
-- **Build Log**: session log (current month only), milestones, and open tasks.
+- **Build Log**: session log (current month only) and milestones.
+- **Open tasks** (database): everything still to do, one row per task with Platform, When and Type. A finished task is deleted. Views: Next build, By platform.
 - **Session log archive**: the older session log entries, by month. Read only when a session needs history.
 - **Qwava, What the App Does Today**: the authoritative description of current app behavior, live and unreleased.
 - **Parity, iOS and Android**: what Android still lacks, what is iOS only by design, and where Android has its own shape. Read before any Android session and before planning a twin.
