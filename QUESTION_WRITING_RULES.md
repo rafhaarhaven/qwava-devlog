@@ -163,7 +163,7 @@ Run it on every new question and follow up, English and German, before anything 
 4. Duplicate check against the WHOLE library in both languages, and inside the new batch. For follow ups that means all 7,300 existing rows. Short follow ups collide often, German more than English.
 5. Ids: right format, continuing in order, one row per question, and for follow ups exactly one `question` and one `question_2` row per question with matching depth and vibe.
 6. Depth and vibe counts against the deck's targets.
-7. The widest German word, by the card width rule in `GERMAN_COPY_RULES.md`.
+7. The widest word, German and English, by the player width rule in `GERMAN_COPY_RULES.md` (327 points).
 
 When Raf sends the export back after pasting, compare it row by row with what was delivered and with the previous export, so a shifted or half pasted block is caught before the JSON export.
 

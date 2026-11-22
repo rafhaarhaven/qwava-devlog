@@ -129,26 +129,29 @@ German wants to build `Kinder-Ich`, `Arbeits-Ich`, `Familien-Ich`, `Wochenend-Ic
 
 Other hyphen traps caught: `Startup-Klischee`, `Startup-Leben`, `Dating-Regel`, `Lieblings-Apps`, `Winterabend-Look`, `Zwei-Fragen-Tag`, `Wikipedia-Strudel`. Each was rewritten as a phrase.
 
-## Long words (the card width rule)
+## Long words (the player width rule)
 
-German builds compounds, and a compound cannot break across lines. On the question card a word that is too wide overflows or forces an ugly break.
+German builds compounds, and a compound cannot break across lines. In the question player a word that is too wide gets cut in the middle (`Abwesenheitsnoti` / `z`).
 
-- **Hard limit: no single word wider than 280 points in Inter SemiBold 28.** Punctuation counts, because a question mark or comma stays glued to its word.
-- **Target: under 250 points.** After the October 2026 pass the widest word in the questions is 259.
-- **Character guide, punctuation included:** up to 13 characters is always safe. 14 to 16 is usually fine, measure it. 17 or more is usually over 250. 20 or more is always over 280. Characters are only a hint (`m` and `w` are wide, `i` and `l` are narrow), so the script decides.
+- **The surface that decides is the question player:** Inter 42, weight 500 (Medium), optical size 32 (`BrandFont.displayL(weight: .medium)`), with 24 points of padding on each side. The smallest supported iPhone (SE, 13 mini, 375 points wide) leaves 327 points. The share card and the other surfaces are smaller, so a word that fits the player fits them too.
+- **Hard limit: no single word wider than 327 points in the player font.** Punctuation counts, because a question mark or comma stays glued to its word.
+- **Second look above 315 points.** After the November 2026 pass the widest word in the questions is 300.
+- **Character guide, punctuation included:** up to 13 characters is always safe. 14 to 16 is often over, measure it. 17 or more is almost always over, 18 or more always. Characters are only a hint (`m` and `w` are wide, `i` and `l` are narrow), so the script decides.
+- This replaces the October 2026 rule (280 points in Inter SemiBold 28), which was measured on the share card and let 53 questions break in the player.
+- Larger iOS text sizes (Dynamic Type) scale the player font, so long words can still break there; that is a code question, not a content one.
 
 **The fix is a phrase, not a compound.**
 
-- Open the compound with a preposition: `Geburtstagsgeschenk` became `Geschenk zum Geburtstag`, `Morgengewohnheit` became `Gewohnheit am Morgen`, `Arbeitsgewohnheit` became `Gewohnheit im Job`, `Sommerfreundschaft` became `Freundschaft aus einem Sommer`.
-- Split or swap a long verb: `hat ... zusammengebracht` became `brachte ... zusammen`, `auseinandergenommen` became `zerlegt`.
-- Turn a long superlative into an adverb: `das Überdramatischste` became `total überdramatisch`.
+- Open the compound with a preposition: `Geburtstagsgeschenk` became `Geschenk zum Geburtstag`, `Morgengewohnheit` became `Gewohnheit am Morgen`, `Abendgewohnheit` became `Gewohnheit am Abend`, `Arbeitsgeschichte` became `Geschichte aus dem Job`, `Geldentscheidung` became `Entscheidung über Geld`.
+- Split or swap a long verb: `hat ... zusammengebracht` became `brachte ... zusammen`, `auseinanderfallen` became `zerbrechen`, `herausgefunden` became `rausgefunden`.
+- Turn a long superlative into an adverb or a different sentence: `das Überdramatischste` became `total überdramatisch`.
 - Keep a long word away from the end of the question, where the question mark adds to its width.
 
-**Settled short forms:** `Jobbeschreibung` (not `Stellenbeschreibung`), `das Kleingedruckte` (not `Nutzungsbedingungen`), `Parallelwelt` (not `Paralleluniversum`).
+**Settled short forms:** `Kürzertreten`, `Langsamkeit` or `langsamer machen` (not `Langsamerwerden`), `Großwerden` (not `Erwachsenwerden`), `Sprachmemos` (not `Sprachnachrichten`), `Beschreibung deines Jobs` or `Stellenanzeige` (not `Jobbeschreibung`, which is too wide), `für normal halten` or `zu schätzen wissen` (not `selbstverständlich`), `Mitteilung` (not `Benachrichtigung`), `das Kleingedruckte` (not `Nutzungsbedingungen`), `Parallelwelt` (not `Paralleluniversum`).
 
-**Meaning and length still win.** The new line keeps the sense of the question and stays inside the length rules below. If a word has no natural split and fits under 280, leave it: `Sprachnachrichten`, `Langsamerwerden`, `Erwachsenwerden`.
+**Meaning and length still win.** The new line keeps the sense of the question and stays inside the length rules below. There are no exceptions to the width limit: a word over 327 always breaks on a small iPhone.
 
-**Verify with a script.** Measure the widest word of every row in the whole library, not only the new rows, with Pillow and the static Inter SemiBold at size 28. Over 280 is a fail, over 250 gets a second look.
+**Verify with a script.** Measure the widest word of every row in the whole library, not only the new rows, with Pillow and `Inter-Variable.ttf` from the iOS repo at size 42, axes set to optical size 32 and weight 500 (`set_variation_by_axes([32, 500])`). Over 327 is a fail, over 315 gets a second look. English rows follow the same limit.
 
 ## Settled vocabulary
 
