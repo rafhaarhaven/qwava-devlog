@@ -46,6 +46,13 @@ The map of documentation locations. This file lists locations only, never conten
 - Reminders about people: intervals per rhythm in `ReminderRules.swift`; the person sheet controls in `SpacePersonReminderRow.swift` and `SpacePersonBirthdayReminderRow.swift`; the Your Space nudge in `NudgeStore.swift` (who is due, two a day, Not now and its sync) and `SpaceNudgeCard.swift`. Android twins: `ReminderRules.kt`, `PersonReminderBoxes.kt` (both boxes), `NudgeStore.kt`, `SpaceNudgeCard.kt`.
 - Analytics: `Analytics.swift` is the only file that calls TelemetryDeck (every event, the opt out key, `setEnabled` for the switch); the player, the share screen and the person page (`SpaceSentView`) take an `openSource`. The opt out switch and the hidden test device switch (five taps on the version line, a hold turns it off) sit in `MoreView.swift`. Android twin: `Analytics.kt`, the switches in `MoreScreen.kt`.
 - App opens and deep sessions behind the behaviour labels: `AppOpenTracker.swift`, and the deep session count in `QuestionPlayerView.swift`.
+- App Check: the provider factory in `QwavaApp.swift`, set before `FirebaseApp.configure()`; the App Attest entitlement in `Qwava.entitlements`. What is registered and enforced in Firebase: the Infrastructure and Accounts page.
+- Sync merge rules under test: `SyncMergeTests.swift` in QwavaTests (`fillingBlanks`, `PeopleStore.merged`, `PeopleStore.foldingSameNames`).
+
+## GitHub checks (qwava-app)
+
+- `.github/workflows/random-check.yml`: runs on every push; flags unseeded random calls in SwiftUI view code.
+- `.github/workflows/ios-build.yml`: runs only by hand. **Before an iOS release:** run "iOS build and tests" on the Actions tab of qwava-app and wait for the green check.
 
 ## This repo
 
