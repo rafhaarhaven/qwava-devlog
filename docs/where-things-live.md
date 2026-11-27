@@ -48,6 +48,8 @@ The map of documentation locations. This file lists locations only, never conten
 - App opens and deep sessions behind the behaviour labels: `AppOpenTracker.swift`, and the deep session count in `QuestionPlayerView.swift`.
 - App Check: the provider factory in `QwavaApp.swift`, set before `FirebaseApp.configure()`; the App Attest entitlement in `Qwava.entitlements`. Android twin: `AppCheckSetup.kt` in `src/debug` (debug provider) and `src/release` (Play Integrity), installed in `QwavaApplication.kt` after `FirebaseApp.initializeApp`. What is registered and enforced in Firebase: the Infrastructure and Accounts page.
 - Sync merge rules under test: `SyncMergeTests.swift` in QwavaTests (`fillingBlanks`, `PeopleStore.merged`, `PeopleStore.foldingSameNames`). Android twin: `SyncMergeTests.kt` in `app/src/test` (`fillingBlanksFrom`, `PeopleStore.merged`, `PeopleStore.foldingSameNames`).
+- Play counts across devices and Clear deck activity: `PlayCountMerge.swift` (base plus one count per device) and `PlayStatsMerge.swift` (the clear stamp, older counts ignored), applied in `PlayStatsStore.swift`, read and written in `CloudSync.swift` (`applyRemotePlayStats`, `pushPlayStats`); tests: `PlayCountMergeTests.swift`, `PlayStatsMergeTests.swift`. No Android twin yet.
+- Watch language: the phone sends the pick in `WatchStatusStore.swift` (`sendLanguage`); the watch receives it in `WatchLanguageReceiver.swift` and stores it in the shared App Group, read by `WatchLanguage` in `WatchStore.swift` and by `QwavaWatchWidget.swift`.
 
 ## Before a release
 
